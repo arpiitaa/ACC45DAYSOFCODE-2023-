@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int A[5], P;
+        for (int i = 0; i < 5; i++) {
+            cin >> A[i];
+        }
+        cin >> P;
+        int total_work_weekdays = 0;
+        for (int i = 0; i < 5; i++) {
+            total_work_weekdays += A[i];
+        }
+        int total_work_with_boost = total_work_weekdays * P;
+
+        if (total_work_with_boost > 24 * 5) {
+            cout << "Yes" << endl;
+        } else {
+            cout << "No" << endl;
+        }
+    }
+
+    return 0;
+}
+
