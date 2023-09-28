@@ -1,0 +1,41 @@
+#include <iostream>
+#include <vector>
+#include <map>
+
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        cin >> N;
+
+        vector<int> A(N);
+
+        for (int i = 0; i < N; i++) {
+            cin >> A[i];
+        }
+
+        map<int, int> freq;
+        for (int i = 0; i < N; i++) {
+            freq[A[i]]++;
+        }
+
+        int max_freq = 0;
+        int most_frequent_element = -1;
+        for (auto it = freq.begin(); it != freq.end(); it++) {
+            if (it->second > max_freq) {
+                max_freq = it->second;
+                most_frequent_element = it->first;
+            }
+        }
+
+        int operations = N - max_freq;
+
+        cout << operations << endl;
+    }
+
+    return 0;
+}
