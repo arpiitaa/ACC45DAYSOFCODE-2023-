@@ -1,0 +1,32 @@
+1st code:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int x,y;
+	    cin>>x>>y;
+	    cout<< abs(x-y)<<endl;
+	}// your code goes here
+	return 0;
+}
+
+2nd code:
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    	    int n, k;
+	    cin>>n>>k;
+	    
+	    cout<<ceil(n/5.0)- ceil(k/5.0) <<endl;
+	}
+	return 0;
+}
