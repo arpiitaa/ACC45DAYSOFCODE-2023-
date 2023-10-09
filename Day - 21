@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int W, X, Y, Z;
+        cin >> W >> X >> Y >> Z;
+
+        int final_balance = W;
+
+        for (int i = 0; i < Z; i++) {
+            final_balance += X;
+            final_balance -= Y;
+        }
+
+        cout << final_balance << endl;
+    }
+
+    return 0;
+}
