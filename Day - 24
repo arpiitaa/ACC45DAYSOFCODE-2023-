@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int c,x,y,t;
+	cin>>t;
+	while(t--){
+	    cin>>c>>x>>y;
+	     cout<<(c-x)*y<<endl;
+	}// your code goes here
+	return 0;
+}
