@@ -1,0 +1,20 @@
+#include <iostream>
+static auto testcase(unsigned N) {
+	return N == 1 || N % 2 == 0;
+}
+
+static void testcase() {
+	unsigned N;
+	std::cin >> N;
+	std::cout << (testcase(N) ? "YES\n" : "NO\n");
+}
+
+int main() {
+	std::ios::sync_with_stdio(false);
+	std::cin.tie(nullptr);
+	std::cin.exceptions(std::ios::failbit | std::ios::badbit);
+	unsigned T;
+	std::cin >> T;
+	while(T--)
+		testcase();
+}
