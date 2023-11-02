@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+#define ll long long
+#define loop(i,n) for(int i=0;i<n;i++)
+#define loop1(i,n) for(int i=1;i<=n;i++)
+using namespace std;
+
+int main() {
+	// your code goes here
+	ll T;
+	cin>>T;
+	while(T--) {
+	    int x,y,d;
+	    cin>>x>>y>>d;
+	     int diff=abs(x-y);
+	     if(diff<=d)
+	     {
+	         cout<<"YES"<<endl;
+	     }
+	     else
+	     {
+	         cout<<"NO"<<endl;
+	     }
+	}
+	return 0;
+}
